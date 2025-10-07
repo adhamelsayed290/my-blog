@@ -1,0 +1,16 @@
+INSERT INTO posts (title, content, created_at, updated_at) VALUES
+('post one test',
+'content for post one..................',
+NOW(), NOW()),
+('post two test',
+'content for post two..................',
+NOW(), NOW()),
+('post three  test',
+'content for post three..................',
+NOW(), NOW()),
+('post four  test',
+'content for post four..................',
+NOW(), NOW()),
+('post five  test',
+'content for post five..................',
+NOW(), NOW());
