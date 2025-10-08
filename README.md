@@ -14,6 +14,28 @@ Users can create, view, edit, and delete blog posts with a clean Bootstrap inter
 1. Clone this repository:
    ```bash
    git clone https://github.com/adhamelsayed290/my-blog.git
+   ```
+2. install dependencies
+   ```bash
+   composer install
+   ```
+3. Copy the environment file and generate app key:
+   ```bash
+   cp .env.example .env
+   php artisan key:generate
+   ```
+4. Run migrations
+   ```bash
+   php artisan migrate
+   ```
+5. Import sample data
+   ```bash
+   mysql -u root -p my_blog  < database/sample_posts.sql
+   ```
+6. Run the server
+   ```bash   
+   php artisan serve
+   ```
 
 ## Screenshots
 
@@ -30,11 +52,14 @@ Users can create, view, edit, and delete blog posts with a clean Bootstrap inter
 ![Edit Post Page](screenshots/edit.png)
 
 ### create success Message
-![Success Message](screenshots/create_mes.png)
+![Create Post Success](screenshots/create_mes.png)
 
 ### update success Message
-![Success Message](screenshots/update_mes.png)
+![Update Post Success](screenshots/update_mes.png)
 
 ### delete success Message
-![Success Message](screenshots/delete_mes.png)
+![Delete Post Success](screenshots/delete_mes.png)
+
+## License
+This project is for educational purposes only.
 
